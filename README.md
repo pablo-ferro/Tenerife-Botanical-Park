@@ -1,7 +1,3 @@
-Here’s an English version of the **README.md** content for your GitHub repository:
-
----
-
 # Botanic Guide of the Park in Santa Cruz de Tenerife
 
 In this visualization, we explore the botanical richness found within the park, highlighting various species of plants that inhabit this green space in Santa Cruz de Tenerife. These plants have been selected not only for their aesthetic value but also for their ecological importance and role in maintaining the environmental balance of the park.
