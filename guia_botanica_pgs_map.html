@@ -1,0 +1,1421 @@
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_0ced0c4abbef7d9444531543e5575920 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css&quot;/&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css&quot;/&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css&quot;/&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css&quot;/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_0ced0c4abbef7d9444531543e5575920&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_0ced0c4abbef7d9444531543e5575920 = L.map(
+                &quot;map_0ced0c4abbef7d9444531543e5575920&quot;,
+                {
+                    center: [28.472225, -16.253919],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    scrollWheelZoom: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9ebb4c35d7ac54bab298e516f24def1 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            );
+        
+    
+            tile_layer_a9ebb4c35d7ac54bab298e516f24def1.addTo(map_0ced0c4abbef7d9444531543e5575920);
+        
+    
+            L.control.fullscreen(
+                {&quot;forceSeparateButton&quot;: false, &quot;position&quot;: &quot;topleft&quot;, &quot;title&quot;: &quot;Full Screen&quot;, &quot;titleCancel&quot;: &quot;Exit Full Screen&quot;}
+            ).addTo(map_0ced0c4abbef7d9444531543e5575920);
+        
+    
+            var tile_layer_9a7835cb5860e8012fa351a8672d4f73 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            );
+            var mini_map_4469890315e87a193a786ab37b47e285 = new L.Control.MiniMap(
+                tile_layer_9a7835cb5860e8012fa351a8672d4f73,
+                {&quot;autoToggleDisplay&quot;: false, &quot;centerFixed&quot;: false, &quot;collapsedHeight&quot;: 25, &quot;collapsedWidth&quot;: 25, &quot;height&quot;: 150, &quot;minimized&quot;: false, &quot;position&quot;: &quot;bottomright&quot;, &quot;toggleDisplay&quot;: true, &quot;width&quot;: 150, &quot;zoomAnimation&quot;: false, &quot;zoomLevelOffset&quot;: -5}
+            );
+            map_0ced0c4abbef7d9444531543e5575920.addControl(mini_map_4469890315e87a193a786ab37b47e285);
+        
+    
+            var measure_control_f700cf6a8247a2e7740ae739276a4133 = new L.Control.Measure(
+                {&quot;position&quot;: &quot;topright&quot;, &quot;primaryAreaUnit&quot;: &quot;sqmeters&quot;, &quot;primaryLengthUnit&quot;: &quot;meters&quot;, &quot;secondaryAreaUnit&quot;: &quot;acres&quot;, &quot;secondaryLengthUnit&quot;: &quot;miles&quot;});
+            map_0ced0c4abbef7d9444531543e5575920.addControl(measure_control_f700cf6a8247a2e7740ae739276a4133);
+
+            // Workaround for using this plugin with Leaflet&gt;=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+    
+            var marker_cluster_abcd09d0164c8788caf1046ac2a33b37 = L.markerClusterGroup(
+                {&quot;disableClusteringAtZoom&quot;: 16, &quot;maxClusterRadius&quot;: 20, &quot;showCoverageOnHover&quot;: false, &quot;spiderfyOnMaxZoom&quot;: false, &quot;zoomToBoundsOnClick&quot;: true}
+            );
+        
+    
+            var circle_marker_4e0d2ea6e9d98f9124247090b8aa861f = L.circleMarker(
+                [28.4729280569, -16.253277543],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_4e0d2ea6e9d98f9124247090b8aa861f.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Chorisia speciosa&lt;br&gt;Nombre común: Palo borracho &lt;br&gt;Notas sobre el árbol: Ãrbol caducifolio, con la base de su tronco engrosada y con fuertes espinas. Tiene una floraciÃ³n espectacular, con grandes flores de hasta 15 cm, de pÃ©talos de color rosa oscuro en exterior y crema en interior. Oriunda de Brasil, Paraguay y Argentina.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_bcaaab49ca608508d024e2ed00eec73b = L.circleMarker(
+                [28.4729355516, -16.2537429064],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_bcaaab49ca608508d024e2ed00eec73b.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Delonix regia&lt;br&gt;Nombre común: Flamboyant &lt;br&gt;Notas sobre el árbol: Ãrbol  caducifolio de porte aparasolado muy utilizado en jardinerÃ­a. Espectacular por sus flores rojas, matizadas, que aparecen normalmente cuando el Ã¡rbol aÃºn no tiene hojas.Sus frutos son legumbres usadas como sonajero.Oriunda de Madagascar.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_ef7aa2141b7932e43984de96f6463a86 = L.circleMarker(
+                [28.471794084, -16.2547742421],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_ef7aa2141b7932e43984de96f6463a86.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Erythrina caffra&lt;br&gt;Nombre común: Ãrbol coral &lt;br&gt;Notas sobre el árbol: Ãrbol de floraciÃ³n naranja-escarlata espectacular, con flores de aspecto de porcelana. Oriunda de Ãfrica del sur.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_45a0b828a422d0ebdd6ed7cbce6029ea = L.circleMarker(
+                [28.4707392218, -16.2540559896],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_45a0b828a422d0ebdd6ed7cbce6029ea.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Jacaranda mimosaefolia&lt;br&gt;Nombre común: Jacaranda &lt;br&gt;Notas sobre el árbol: Ãrbol de floraciÃ³n azul-violeta muy espectacular, que es utilizado por su interÃ©s ornamental en la jardinerÃ­a de las zonas cÃ¡lidas de la islas. Oriunda de Brasil, Argentina, Uruguay y AmÃ©rica Tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_9e811ed77aa1027ac92d2333d92d6c09 = L.circleMarker(
+                [28.4731910077, -16.2532175535],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_9e811ed77aa1027ac92d2333d92d6c09.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Jacaranda mimosaefolia&lt;br&gt;Nombre común: Jacaranda &lt;br&gt;Notas sobre el árbol: Ãrbol de floraciÃ³n azul-violeta muy espectacular, que es utilizado por su interÃ©s ornamental en la jardinerÃ­a de las zonas cÃ¡lidas de la islas. Oriunda de Brasil, Argentina, Uruguay y AmÃ©rica Tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_3b64e82dc0dc97a7400a0963767fdb76 = L.circleMarker(
+                [28.472104539, -16.2533016316],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_3b64e82dc0dc97a7400a0963767fdb76.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Phytolacca dioica&lt;br&gt;Nombre común: OmbÃº &lt;br&gt;Notas sobre el árbol: Ãrbol portentoso de mÃ¡s de 10 m. de alto, con tronco muy ensanchado.Hojas de color verde lustroso, con el nervio central marcado. Inflorescencias blanquecinas, pÃ©ndulas, y frutos en forma de baya amarillenta.Oriunda de Argentina, Uruguay y Brasil
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_b5175085c524e7ba7a4da556b01bd98c = L.circleMarker(
+                [28.4724730312, -16.2542326513],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_b5175085c524e7ba7a4da556b01bd98c.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Tipuana tipu&lt;br&gt;Nombre común: Palo rosa &lt;br&gt;Notas sobre el árbol: Ãrbol caducifolio, con hojasimparipinnadas de color verde amarillento. Inflorescencias terminales con flores de color amarillo o anaranjado. El fruto alado, es una sÃ¡mara indehiscente. Oriunda de Brasil, Bolivia y Argentina
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_bf4265ed38d352c00136d4e1ae4e65e7 = L.circleMarker(
+                [28.4732436995, -16.2538274346],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_bf4265ed38d352c00136d4e1ae4e65e7.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ceiba pentandra&lt;br&gt;Nombre común: Ceiba &lt;br&gt;Notas sobre el árbol: Ãrbol excelso de hasta 30 m. de altura, con tronco liso y espinoso. Hojas caducifolias de sÃºbita apariciÃ³n. Sus frutos contienen una lana, utilizada como aislante y de sus semillas aceite comestible y como combustible. Oriunda de AmÃ©rica tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_11d31c478f03821d8ee2c6c060bd016f = L.circleMarker(
+                [28.4729724438, -16.2547271272],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_11d31c478f03821d8ee2c6c060bd016f.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Thevetia peruviana&lt;br&gt;Nombre común: Cascabel &lt;br&gt;Notas sobre el árbol: Arbusto de frutos tÃ³xicos y llamativas flores amarillas. Relacionada botÃ¡nicamente con la adelfa, es conocida tambiÃ©n como &quot;adelfa amarilla&quot;. Se planta aislada o en setos. Oriunda de MÃ©jico y AmÃ©rica tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_d37ac76a1732d363304c026fff7b5941 = L.circleMarker(
+                [28.4715830394, -16.2534492696],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_d37ac76a1732d363304c026fff7b5941.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Spathodea campanulata&lt;br&gt;Nombre común: Tulipero del GabÃ³n &lt;br&gt;Notas sobre el árbol: Ãrbol muy utilizado en la jardinerÃ­a clÃ¡sica canaria, especialmente en zonas cÃ¡lidas por sus espectaculares flores rojas. MÃ¡s rara es la variedad de flores amarillas o anaranjadas. Oriunda de Ãfrica tropical occidental.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_9b8560997ea8c8fc100f7584094ee143 = L.circleMarker(
+                [28.4726230671, -16.2548249668],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_9b8560997ea8c8fc100f7584094ee143.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Spathodea campanulata&lt;br&gt;Nombre común: Tulipero del GabÃ³n &lt;br&gt;Notas sobre el árbol: Ãrbol muy utilizado en la jardinerÃ­a clÃ¡sica canaria, especialmente en zonas cÃ¡lidas por sus espectaculares flores rojas. MÃ¡s rara es la variedad de flores amarillas o anaranjadas. Oriunda de Ãfrica tropical occidental.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_7f5f03986bbc5eec06b74a29d2e83c6a = L.circleMarker(
+                [28.4719214291, -16.2549713269],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_7f5f03986bbc5eec06b74a29d2e83c6a.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Spathodea campanulata&lt;br&gt;Nombre común: Tulipero del GabÃ³n &lt;br&gt;Notas sobre el árbol: Ãrbol muy utilizado en la jardinerÃ­a clÃ¡sica canaria, especialmente en zonas cÃ¡lidas por sus espectaculares flores rojas. MÃ¡s rara es la variedad de flores amarillas o anaranjadas. Oriunda de Ãfrica tropical occidental.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_ce5aa764447ec94975e93d893cfb75fd = L.circleMarker(
+                [28.4723350177, -16.2542595901],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_ce5aa764447ec94975e93d893cfb75fd.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Pithecellobium dulce&lt;br&gt;Nombre común: Guamochil &lt;br&gt;Notas sobre el árbol: Ãrbol de hasta 20 m. de alto, de corteza gris y una parv de espinas en la base de las hojas. Tiene interÃ©s maderero, forrajero y de sus frutos en vaina se obtiene una pulpa comstible agridulce, que rodea las semillas. Oriunda de AmÃ©rica tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_7378eb11a06df667b8e026aad6c24e28 = L.circleMarker(
+                [28.4715833822, -16.2538918193],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_7378eb11a06df667b8e026aad6c24e28.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Cedrela odorata&lt;br&gt;Nombre común: Cedro de Cuba &lt;br&gt;Notas sobre el árbol: Ãrbol de corteza gris-marrÃ³n, con fisuras irregulares. Hojas pinnadas agrupadas en el extremo de las ramas, de las que penden racimos los frutos colgantes: una cÃ¡psula leÃ±osa que se abre en 5 valvas. Uso en caja de puros. Oriunda de AmÃ©rica Central.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_13037b4f911df207564071f62ed5a267 = L.circleMarker(
+                [28.4718710193, -16.2551134017],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_13037b4f911df207564071f62ed5a267.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Citharexylum quadrangulare&lt;br&gt;Nombre común: Bella sombra &lt;br&gt;Notas sobre el árbol: Ãrbol con aspecto de limonero, reconocible por sus inflorescencias, racimos axilares de color blanco. Oriundo de las Antillas y norte de SudamÃ©rica.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_074ecd057480664ded0c4e251b8d371f = L.circleMarker(
+                [28.4721402051, -16.2553206212],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_074ecd057480664ded0c4e251b8d371f.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ginkgo biloba&lt;br&gt;Nombre común: Ginkgo &lt;br&gt;Notas sobre el árbol: Ãrbol que puede alcanzar los 30 metros de altura, considerado por su rareza y antigÃ¼edad botÃ¡nica, un fÃ³sil viviente. Las hojas bilobuladas, caducifolias, tiene propiedades medicinales. El fruto es comestible. Oriunda de China.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_481a2411c3965326d90dfaab987eca0b = L.circleMarker(
+                [28.4727535354, -16.2549877601],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_481a2411c3965326d90dfaab987eca0b.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Terminalia catappa&lt;br&gt;Nombre común: AlmendrÃ³n &lt;br&gt;Notas sobre el árbol: Ãrbol de frutos comestibles de los que ademÃ¡s se obtiene aceite tambiÃ©n comestible. Utilizado en zonas prÃ³ximas al mar por su resistencia a la salinidad. Oriunda de Madagascar, India y Malasia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_28f672ee1580b54747402f404a0c8b27 = L.circleMarker(
+                [28.4726120483, -16.2538531717],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_28f672ee1580b54747402f404a0c8b27.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Caesalpinea cacalaco&lt;br&gt;Nombre común: Cascalote &lt;br&gt;Notas sobre el árbol: Ãrbol de unos 8 m. de alto, con espinas. Inflorescencias de llamativas flores amarillas, matizadas de rojo. De sus frutos se obtienen sustancias  colorantes. Oriunda del sur de MÃ©jico.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_65a4ad4f44937c850a80cb852a3a0020 = L.circleMarker(
+                [28.4730616343, -16.2540930301],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_65a4ad4f44937c850a80cb852a3a0020.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Chamaerops humilis&lt;br&gt;Nombre común: Palmito &lt;br&gt;Notas sobre el árbol: Palmerita o &quot;palmito&quot; con numeroso troncos y hojas abanicadas de color verde azulado y pecÃ­olo espinoso. El cogollo es comestible como ensalada. Oriunda de la regiÃ³n mediterrÃ¡nea excepto Egipto.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_075a68ea47cdbd5d8605f7b84ed070de = L.circleMarker(
+                [28.4716634112, -16.2542823195],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_075a68ea47cdbd5d8605f7b84ed070de.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Howea forsteriana&lt;br&gt;Nombre común: Kentia &lt;br&gt;Notas sobre el árbol: Muy popular, por ser una de las palmeras mÃ¡s utilizadas como ornamental, especialmente en interiores. EstÃ­pite no ensanchado, de color verde al principio y con anillas. oriunda de la isla de Lord Howe.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_ca345f1aedf117039a191c614726d3c9 = L.circleMarker(
+                [28.4716721863, -16.2533785271],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_ca345f1aedf117039a191c614726d3c9.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Phoenix canariensis&lt;br&gt;Nombre común: Palmera canaria &lt;br&gt;Notas sobre el árbol: Endemismo canario, sÃ­mbolo vegetal del archipiÃ©lago. Resulta nuestra mejor embajadora en todo el mundo templado por su magnÃ­fico porte ornamental. Palmera dioica con numerosos usos tradicionales, miel de palma, cesterÃ­a, colmenas, etc.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_32820bca00009ca2bc30366e1a9b4d27 = L.circleMarker(
+                [28.47174208, -16.2547174194],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_32820bca00009ca2bc30366e1a9b4d27.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Phoenix canariensis&lt;br&gt;Nombre común: Palmera canaria &lt;br&gt;Notas sobre el árbol: Endemismo canario, sÃ­mbolo vegetal del archipiÃ©lago. Resulta nuestra mejor embajadora en todo el mundo templado por su magnÃ­fico porte ornamental. Palmera dioica con numerosos usos tradicionales, miel de palma, cesterÃ­a, colmenas, etc.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_371b650a91eb0ebbc2d4fb5633268762 = L.circleMarker(
+                [28.4727271987, -16.2548078323],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_371b650a91eb0ebbc2d4fb5633268762.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Phoenix reclinata&lt;br&gt;Nombre común: Palmera de Senegal &lt;br&gt;Notas sobre el árbol: Palmera de troncos mÃºltiples, como puede observarse en el ejemplar que crece en el Parque GarcÃ­a Sanabria. Oriunda de Ãfrica tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_952c840d3cd23d2dca3c11f2ee404e6b = L.circleMarker(
+                [28.4725292917, -16.2554469639],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_952c840d3cd23d2dca3c11f2ee404e6b.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Dypsis lutescens&lt;br&gt;Nombre común: Palma frutos de oro &lt;br&gt;Notas sobre el árbol: Palmera que crece en manojos o fascÃ­culos con varios estÃ­pites, de hasta 9 m. de alto, anillados y de color amarillento. Muy utilizada como ornamental, incluso en condiciones de interior. Oriunda de Madagascar.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_fedf15307e59584bef87d82b708d508f = L.circleMarker(
+                [28.4729786863, -16.2538546209],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_fedf15307e59584bef87d82b708d508f.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Dracaena draco&lt;br&gt;Nombre común: Dracaena draco &lt;br&gt;Notas sobre el árbol: SÃ­mbolo vegetal de la Isla de Tenerife. Cultivado desde hace siglos por su interÃ©s ornamental y las propiedades casÃ­ mÃ­ticas de la &quot;sangre de drago&quot;, usada como fortaleciente de encÃ­as y tinte. Endemismo de Canarias, Madeira y Cabo Verde.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_30b3468ddc2432d23d8fb50d2dd5fa17 = L.circleMarker(
+                [28.4723597785, -16.2532547583],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_30b3468ddc2432d23d8fb50d2dd5fa17.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Cocos nucifera&lt;br&gt;Nombre común: Cocotero &lt;br&gt;Notas sobre el árbol: Palmera con tronco frecuentemente inclinado, con anillos espaciados. Hojas de color verde amarillento y frutos cubiertos de fibras, con pulpa comestible, los apreciados cocos. Planta con numerosos usos. Oriunda de Melanesia tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_b84bb2bbbea734f5089d37dcaf836a9a = L.circleMarker(
+                [28.472717463, -16.2547449306],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_b84bb2bbbea734f5089d37dcaf836a9a.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Cycas circinalis&lt;br&gt;Nombre común: SagÃº &lt;br&gt;Notas sobre el árbol: TÃ­pica &quot;palmerita&quot; de la familia de las cicas, muy utilizada en jardinerÃ­a. Oriunda del sur de la India, CeilÃ¡n, Sumatra y Filipinas.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_059b58f578b8d39c7486a14e2a3f5023 = L.circleMarker(
+                [28.4714094908, -16.2544258818],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_059b58f578b8d39c7486a14e2a3f5023.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Livistona chinensis&lt;br&gt;Nombre común: Palmera china de abanico &lt;br&gt;Notas sobre el árbol: Palmera de hojas en forma de abanico, tambiÃ©n utilizada como planta de interior. Oriunda de la China, JapÃ³n, islas de Ryukyu y TaiwÃ¡n.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_c68a8d2322706b40585ed23932c138f7 = L.circleMarker(
+                [28.4722106801, -16.2542226783],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_c68a8d2322706b40585ed23932c138f7.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Roystonea regia&lt;br&gt;Nombre común: Palmera real &lt;br&gt;Notas sobre el árbol: Palmera de usop ornamental con portes de jasta 15 m. de alto. EstÃ­pite de color blanco-grisÃ¡ceo liso y con la base de las hojas formando un capitel de color  verde. En el parque a lo largo de diagonales del paseo  Domingo PÃ©rez Minik. Oriunda de Cuba
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_fecf593602dfa002db25f85adc68f061 = L.circleMarker(
+                [28.4722246392, -16.2550271967],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_fecf593602dfa002db25f85adc68f061.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Washingtonia filifera&lt;br&gt;Nombre común: Palmera abanico californiana &lt;br&gt;Notas sobre el árbol: Palmera con estÃ­pe mÃ¡s grueso que la especie robusta, pero tambiÃ©n con grandes hojas en forma de abanico y con uso frecuente en jardinerÃ­a. Oriunda de MÃ©jico, Arizona y Baja California.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_7f82ecfd14c493403cc49cb0e4e91c6e = L.circleMarker(
+                [28.4723845925, -16.2549886495],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_7f82ecfd14c493403cc49cb0e4e91c6e.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Washingtonia robusta&lt;br&gt;Nombre común: Palmera abanico mejicana &lt;br&gt;Notas sobre el árbol: Palmera estilizada con grandes hojas en forma de abanico. Utilizada en muchas regiones del mundo por su interÃ©s ornamental. Crece rÃ¡pidoy se planta aisladao en alineaciÃ³n.Oriunda del noroeste de MÃ©jico y Baja California.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_116baab8f1e19341bb411b3e38c6a206 = L.circleMarker(
+                [28.4732336365, -16.2540505582],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_116baab8f1e19341bb411b3e38c6a206.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Veicthia merrillii&lt;br&gt;Nombre común: Palma de Manila &lt;br&gt;Notas sobre el árbol: Palmera de estÃ­pite liso, grisÃ¡ceo y con anillos muy juntos. Sus inflorescencias crecen debajo del capitel. Oriunda de Filipinas.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_576ab20438c7bae73e61170b293cbd18 = L.circleMarker(
+                [28.4720860809, -16.2543570034],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_576ab20438c7bae73e61170b293cbd18.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Archontophoenix alexandrae&lt;br&gt;Nombre común: Palmera elegante &lt;br&gt;Notas sobre el árbol: Palmera de hasta 10 metros, con tronco liso y no ensanchado en la base. Oriunda del este de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_fa782ca0c04c0db18622b3e361adeca7 = L.circleMarker(
+                [28.4713628732, -16.2542880132],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_fa782ca0c04c0db18622b3e361adeca7.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Caryota urens&lt;br&gt;Nombre común: Palmera cola de pescado &lt;br&gt;Notas sobre el árbol: Palmera de porte elegante, antaÃ±o rara en la isla, se ha extendido en jardinerÃ­a por su interÃ©s ornamental. De su savia se obtienen bebidas alcohÃ³licas por fermentaciÃ³n. Oriunda de la India, Sri Lanka y Birmania.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_6cfd6cecc7aaa1501937284079e8c789 = L.circleMarker(
+                [28.4725510658, -16.2549898204],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_6cfd6cecc7aaa1501937284079e8c789.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Macrozamia moreii&lt;br&gt;Nombre común: Macrozamia &lt;br&gt;Notas sobre el árbol: &quot;Palmerita&quot; de la familia de las cicas y de las palmeras sagÃº, utilizado en jardinerÃ­a por su porte palmeriforme, muy estÃ©tico. Oriunda del este de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_7712b97c6678eec719fe44512e449413 = L.circleMarker(
+                [28.4717979494, -16.2543718828],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_7712b97c6678eec719fe44512e449413.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Hyophorbe verschaffeltii&lt;br&gt;Nombre común: Mascarena &lt;br&gt;Notas sobre el árbol: Palmera de estÃ­pite fusiforme, liso y anillado. Las bases de las hojas ensanchadas, conforman un capitel verdoso de base engrosada. Oriunda de las Islas Mascarenas.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_90d55945468809aaed3492bb9e736408 = L.circleMarker(
+                [28.4718901426, -16.2534598303],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_90d55945468809aaed3492bb9e736408.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Schefflera actinophylla&lt;br&gt;Nombre común: Ãrbol de los paraguas &lt;br&gt;Notas sobre el árbol: Ãrbol siempreverde muy ramificado, con las hojas palmaticompuestas de color verde oscuro, desplegadas a modo de paraguas. Flores sÃ©siles, rojizas, dispuestas en espigas apicales actiniformes, como un pulpo. Oriunda de Australia, Java y Nueva Guinea
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_90dc3663e454fd595e12239c4187a349 = L.circleMarker(
+                [28.4728226119, -16.2549168627],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_90dc3663e454fd595e12239c4187a349.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Brachychiton populneus&lt;br&gt;Nombre común: Brachichito blanco &lt;br&gt;Notas sobre el árbol: Ãrbol con flores agrupadas en racimos de color crema. Oriunda de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_003972db92e29ff5215c794fe189f7a9 = L.circleMarker(
+                [28.4736597574, -16.2535179522],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_003972db92e29ff5215c794fe189f7a9.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ficus microcarpa&lt;br&gt;Nombre común: Laurel de Indias &lt;br&gt;Notas sobre el árbol: Ãrbol de magnÃ­fica copa siempreverde, ampliamente utilizado en plazas de Canarias, como Ã¡rbol de sombra. Los mÃ¡s antiguos de Canarias en la PLaza del PrÃ­ncipe de Asturias y en los Llanos de Aridane en La Palma. Oriunda  de Asia tropical y Malasia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_9bf91f7014da3534a1b6c527b79629c6 = L.circleMarker(
+                [28.4721504109, -16.2554684688],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_9bf91f7014da3534a1b6c527b79629c6.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ficus microcarpa&lt;br&gt;Nombre común: Laurel de Indias &lt;br&gt;Notas sobre el árbol: Ãrbol de magnÃ­fica copa siempreverde, ampliamente utilizado en plazas de Canarias, como Ã¡rbol de sombra. Los mÃ¡s antiguos de Canarias en la PLaza del PrÃ­ncipe de Asturias y en los Llanos de Aridane en La Palma. Oriunda  de Asia tropical y Malasia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_a7d70b6f6b0fe9f9bd13eca7d5e4c0a7 = L.circleMarker(
+                [28.4732322221, -16.2541080171],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_a7d70b6f6b0fe9f9bd13eca7d5e4c0a7.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Casimiroa edulis&lt;br&gt;Nombre común: Sapote blanco &lt;br&gt;Notas sobre el árbol: Ãrbol con hojas digitadas y frutos comestibles, con forma redondeada, sabor dulce y ricos en vitamina A y C. Oriunda de MÃ©jico, y CentroamÃ©rica.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_0125ccdfeef28f4f36fe65b3eaa11e86 = L.circleMarker(
+                [28.4721271839, -16.2551198923],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_0125ccdfeef28f4f36fe65b3eaa11e86.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ceratonia siliqua&lt;br&gt;Nombre común: Algarrobo &lt;br&gt;Notas sobre el árbol: Ãrbol mediterrÃ¡neo de hojas compuestas paripinnadas, cuyos frutos en forma de legumbre se utilizan como forraje. Oriunda del MediterrÃ¡neo oriental.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_9732a8de39143357bc0d4cae90480be0 = L.circleMarker(
+                [28.4726568232, -16.2550283113],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_9732a8de39143357bc0d4cae90480be0.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ficus benghalensis&lt;br&gt;Nombre común: Higuera de Bengala &lt;br&gt;Notas sobre el árbol: Ãrbol sagrado en la India, con frutos llamativos cuando estÃ¡n maduros de color rojo y hojas lustrosas verde oscuras. Oriunda de la India, PakistÃ¡n y Bangladesh.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_4825a92972548b4d858686e542074340 = L.circleMarker(
+                [28.4726854449, -16.255157185],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_4825a92972548b4d858686e542074340.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ficus elastica&lt;br&gt;Nombre común: Ãrbol del caucho &lt;br&gt;Notas sobre el árbol: Ãrbol siempreverde de grandes hojas coriÃ¡ceas, tambiÃ©n llamado &quot;gomero&quot; ya que de su latex se obtiene goma o caucho. Oriunda de Asia tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_c8ab1833b41e87c685dfe6453652d566 = L.circleMarker(
+                [28.4726307144, -16.2544450998],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_c8ab1833b41e87c685dfe6453652d566.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Grevillea robusta&lt;br&gt;Nombre común: Pino de oro &lt;br&gt;Notas sobre el árbol: Ãrbol de hojas bipinnadas, con hojas verdes por el haz y plateado-tormentosas por el envÃ©s. La espectacular floraciÃ³n amarillo-Ã¡urea, justifica su nombre vulgar.Frecuente en los jardines de Santa Cruz. Oriunda del este de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_628a8f0d6dd64c3031b5e9fd13418b5e = L.circleMarker(
+                [28.4718184371, -16.2549960228],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_628a8f0d6dd64c3031b5e9fd13418b5e.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Lagunaria patersonii&lt;br&gt;Nombre común: Ãrbol pica pica &lt;br&gt;Notas sobre el árbol: Ãrbol relativamente frecuente en nuestros jardines, con hojas grises y floressolitarias de color rosa. Oriunda de Australia, islas de Norfolk y Lord Howe.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_ccc11b5127324c4781a665621d5a0b57 = L.circleMarker(
+                [28.4721854685, -16.2551699768],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_ccc11b5127324c4781a665621d5a0b57.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Olea europaea&lt;br&gt;Nombre común: Olivo &lt;br&gt;Notas sobre el árbol: Ãrbol de hojas lanceoladas, opuestas, verdes por el haz y blanquecinas. Vinculado a la cultura mediterrÃ¡nea, su polen es alergÃ³geno, especialmente en Ã¡reas de cultivo masivo y su fruto, la oliva, es generadora de aceite. RegiÃ³n MediterrÃ¡nea.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_80f6ff25a9a03b4571384b430be2a4c5 = L.circleMarker(
+                [28.4716725723, -16.2530154002],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_80f6ff25a9a03b4571384b430be2a4c5.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Schinus molle&lt;br&gt;Nombre común: Falso pimentero &lt;br&gt;Notas sobre el árbol: Ãrbol muy utilizado en la jardinerÃ­a canaria, con ramajo pÃ©ndulo a modo de sauce llorÃ³n. Sus frutos, con pepitas han sido utilizados para adulterar la pimienta negra. Oriunda de MÃ©jico y AmÃ©rica Tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_010f715bc571cc0fb8e397fea5acf787 = L.circleMarker(
+                [28.472123615, -16.2548190745],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_010f715bc571cc0fb8e397fea5acf787.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Brachychiton acerifolius&lt;br&gt;Nombre común: Ãrbol botella &lt;br&gt;Notas sobre el árbol: Ãrbol caducifolio de floraciÃ³n rojiza espectacular, que precede a la apariciÃ³n de las hojas. Oriunda de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_0b19fb61289ae1fc4f1ad9424bc7ae9e = L.circleMarker(
+                [28.4723848115, -16.2548328862],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_0b19fb61289ae1fc4f1ad9424bc7ae9e.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Casuarina equisetifolia&lt;br&gt;Nombre común: Casuarina &lt;br&gt;Notas sobre el árbol: Conocido por &quot;pino marÃ­timo&quot; debido a su porte, que recuerda vagamente al de un pino, y resistencia a la salinidad. Es utilizado en algunas zonas del ArchipiÃ©lago como cortavientos y fijador de dunas. Oriunda de Australia, suroeste de Asia y Polinesia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_39972098f9097f96a6cdb8f3c5d3cf7a = L.circleMarker(
+                [28.4719427204, -16.2526963326],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_39972098f9097f96a6cdb8f3c5d3cf7a.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ficus macrophylla&lt;br&gt;Nombre común: BanyÃ¡n australiano &lt;br&gt;Notas sobre el árbol: Ãrbol de la familia de las higueras, de gran porte, que caracteriza el paseo prÃ³ximo a la calle Dr. JosÃ© Naveiras. Uno de  sus cultivares es muy utilizado por la profusa emisiÃ³n de raÃ­ces aÃ©reas. Originaria de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_eb10257c596740b36fec0a2c7400aa71 = L.circleMarker(
+                [28.4737319432, -16.2534925026],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_eb10257c596740b36fec0a2c7400aa71.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ficus macrophylla&lt;br&gt;Nombre común: BanyÃ¡n australiano &lt;br&gt;Notas sobre el árbol: Ãrbol de la familia de las higueras, de gran porte, que caracteriza el paseo prÃ³ximo a la calle Dr. JosÃ© Naveiras. Uno de  sus cultivares es muy utilizado por la profusa emisiÃ³n de raÃ­ces aÃ©reas. Originaria de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_ba50eab95e366d77dd5d1d359392456f = L.circleMarker(
+                [28.471994276, -16.2543234788],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_ba50eab95e366d77dd5d1d359392456f.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ficus macrophylla&lt;br&gt;Nombre común: BanyÃ¡n australiano &lt;br&gt;Notas sobre el árbol: Ãrbol de la familia de las higueras, de gran porte, que caracteriza el paseo prÃ³ximo a la calle Dr. JosÃ© Naveiras. Uno de  sus cultivares es muy utilizado por la profusa emisiÃ³n de raÃ­ces aÃ©reas. Originaria de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_8029cf4c40c059fb9ce3ed73d795410a = L.circleMarker(
+                [28.471499794, -16.253361498],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_8029cf4c40c059fb9ce3ed73d795410a.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Stenocarpus sinuatus&lt;br&gt;Nombre común: Rueda de fuego &lt;br&gt;Notas sobre el árbol: Ãrbol de hasta 40 m. de altoo. La corteza es cafÃ© grisÃ¡cea, es irregular y no es lisa. El tronco cilÃ­ndrico tiene la base rebordeada. Hojas simpleso pinnatÃ­fidas, con mÃ¡rgenes ondulados. Las flores ornamentales, rojas. Oriunda de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_00b36b805d96c57e9f2ece14a7ffe278 = L.circleMarker(
+                [28.471746832, -16.2550504551],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_00b36b805d96c57e9f2ece14a7ffe278.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Tamarindus indica&lt;br&gt;Nombre común: Tamarindo &lt;br&gt;Notas sobre el árbol: Ãrbol apreciado por la pulpa comestible de sus frutos y ciertos usos en ebanisterÃ­a. Algunos de los ejemplares presentes en el Parque, ya existÃ­an en las fincas previas a su construcciÃ³n. Oriunda de Ãfrica tropical e India.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_f2e7b4d278c9c2e404a35603171e5de5 = L.circleMarker(
+                [28.473450869, -16.2537424368],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_f2e7b4d278c9c2e404a35603171e5de5.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Tamarindus indica&lt;br&gt;Nombre común: Tamarindo &lt;br&gt;Notas sobre el árbol: Ãrbol apreciado por la pulpa comestible de sus frutos y ciertos usos en ebanisterÃ­a. Algunos de los ejemplares presentes en el Parque, ya existÃ­an en las fincas previas a su construcciÃ³n. Oriunda de Ãfrica tropical e India.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_abe8a19a1c0e97eac9920c5791f94b49 = L.circleMarker(
+                [28.4727404268, -16.2538610001],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_abe8a19a1c0e97eac9920c5791f94b49.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Swietenia mahagoni&lt;br&gt;Nombre común: Caobo de Antillas &lt;br&gt;Notas sobre el árbol: Ãrbol de hasta 25 m. de altura, con fruto en cÃ¡psula recta de color marrÃ³n oscuro o negro, que se abre en cuatro o cinco valvas. Madera muy apreciada en ebanisterÃ­a. Oriunda de Florida y Antillas.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_b7e4650488353bdf02d5534af05620ee = L.circleMarker(
+                [28.4726912933, -16.2549723773],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_b7e4650488353bdf02d5534af05620ee.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Swietenia macrophylla&lt;br&gt;Nombre común: Caobo &lt;br&gt;Notas sobre el árbol: Ãrbol cuyo principal interÃ©s reside en que su madera pardo-rojiza, considerada la mejor del mundo para ebanisterÃ­a. Oriunda de Honduras.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_09f496e07aa258c45e570fb6785ce9a6 = L.circleMarker(
+                [28.4733713437, -16.2533529372],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_09f496e07aa258c45e570fb6785ce9a6.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Brachychiton x roseus&lt;br&gt;Nombre común: Brachichito rosado &lt;br&gt;Notas sobre el árbol: TaxÃ³n hÃ­brido entre dos especies presentes tambiÃ©n en el parque: B. acerifolius, el Ã¡rbol botella con flores rojas y B. populneus, el brachichito blanco, con flores color crema. El hÃ­brido presenta flores de color rosado. Oriunda de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_6cff3b54a9901025eef9a94e040cc88f = L.circleMarker(
+                [28.4735095274, -16.253346683],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_6cff3b54a9901025eef9a94e040cc88f.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Pimenta dioica&lt;br&gt;Nombre común: Pimienta de Jamaica &lt;br&gt;Notas sobre el árbol: Ãrbol de frutos y hojas medicinales. Los primeros son utilizados como condimento. Como curiosidad se ha incorporado ahora a la flora del Parque. Oruinda de MÃ©jico y CentroamÃ©rica.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_1bd160e886fd573a2590f5860b815c7c = L.circleMarker(
+                [28.4734951338, -16.2537048194],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_1bd160e886fd573a2590f5860b815c7c.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Hura crepitans&lt;br&gt;Nombre común: Jabillo &lt;br&gt;Notas sobre el árbol: Ãrbol monoico utilizado para hacer canoas. Sus semillas crudas son venenosas; asadas son comestibles. Oriunda de las Antillas y AmÃ©rica Tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_d53fe726b6b61729d9b54d6fee25c71a = L.circleMarker(
+                [28.4707968757, -16.2540678344],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_d53fe726b6b61729d9b54d6fee25c71a.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Hura crepitans&lt;br&gt;Nombre común: Jabillo &lt;br&gt;Notas sobre el árbol: Ãrbol monoico utilizado para hacer canoas. Sus semillas crudas son venenosas; asadas son comestibles. Oriunda de las Antillas y AmÃ©rica Tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_e6c123263312f7394759736e1f68ee53 = L.circleMarker(
+                [28.4717786627, -16.2549411524],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_e6c123263312f7394759736e1f68ee53.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Aleurites moluccana&lt;br&gt;Nombre común: Ãrbol candil &lt;br&gt;Notas sobre el árbol: Ãrbol relativamente raro en la isla. AdemÃ¡s de ornamental, de sus frutos se obtiene un aceite con diversos usos, entre los que destaca la fabricaciÃ³n de velas. Oriunda de India, China, Thailandia y Filipinas.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_e71ef403b6e3e9e1c2a780fbecce9402 = L.circleMarker(
+                [28.4712317682, -16.2535725536],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_e71ef403b6e3e9e1c2a780fbecce9402.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Eucalyptus chamaeldulensis&lt;br&gt;Nombre común: Eucalipto &lt;br&gt;Notas sobre el árbol: Gran Ã¡rbol que alcanza hasta los 60 metros de altura. Utilizado por su interÃ©s maderero. Oriunda de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_6dac69f37c6342c0eaba047ad181a5c3 = L.circleMarker(
+                [28.4708668656, -16.2541699227],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_6dac69f37c6342c0eaba047ad181a5c3.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Macadamia ternifolia&lt;br&gt;Nombre común: Avellano de Australia &lt;br&gt;Notas sobre el árbol: Ãrbol cuyo principal interÃ©s reside en su fruto comestible, con aceites Ãºtiles. Oriunda de Australia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_1ce217eabd773bce7e948916db24f0a9 = L.circleMarker(
+                [28.4726553559, -16.2539516678],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_1ce217eabd773bce7e948916db24f0a9.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Harpullia pendula&lt;br&gt;Nombre común: Harpulia &lt;br&gt;Notas sobre el árbol: Ãrbol de hojas paripinnadas y fruto en cÃ¡psula biolobulada. Se trata de una especie rara en Canarias, que en su lugar de origen se usa a veces para construcciones. Oriunda de la India.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_c483c50e5fed48df738a95842f17ac6f = L.circleMarker(
+                [28.4730202561, -16.2544762182],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_c483c50e5fed48df738a95842f17ac6f.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Cordia sebestena&lt;br&gt;Nombre común: Nomeolvides &lt;br&gt;Notas sobre el árbol: Es un Ã¡rbol conocido por sus flores, usadas en temÃ¡ticas ornamentales en Ã¡reas tropicales y subtropicales. Hojas verdes oscuras, ovaladas y tiene frutos ovalados comestibles. Es oriunda del Caribe  y norte de SuramÃ©rica.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_e9153a6c4144d0491fb2c7605bb94507 = L.circleMarker(
+                [28.47318095, -16.2541822103],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_e9153a6c4144d0491fb2c7605bb94507.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Mangifera indica&lt;br&gt;Nombre común: Mango &lt;br&gt;Notas sobre el árbol: Ãrbol tropical de hojas coriÃ¡ceas, muy apreciado por sus frutos de sabor resinoso. Muchos santacruceros conocieron los mangs por el ejemplar presente en el parque, junto a la nueva cafeterÃ­a. Oriunda de la India.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_12e71746007824414f2c284fa123271c = L.circleMarker(
+                [28.4730965769, -16.2544232398],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_12e71746007824414f2c284fa123271c.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ficus virens&lt;br&gt;Nombre común: Ficus verde &lt;br&gt;Notas sobre el árbol: Ãrbol de tamaÃ±o medio que crece hasta una altura de 8-10 metros en cultivo y hasta 35 metros en lugar de origen. Tiene una copa amplias, raÃ­ces aÃ©reas y el tronco con la corteza lisa y tono gris. Oriunda de la India, sureste de Asia y norte de Austra
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_779c01b5ac00bc8231f8febf6fee239e = L.circleMarker(
+                [28.4716283372, -16.2535218545],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_779c01b5ac00bc8231f8febf6fee239e.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Araucaria heterophylla&lt;br&gt;Nombre común: Araucaria &lt;br&gt;Notas sobre el árbol: Se trata de una conÃ­fera, cuyo nombre vernacular se debe a que este Ã¡rbol, que no es un pino. EstÃ¡ ampliamente cultivado en todo el mundo por su valor ornamental, Oriundo de la Isla de Norfolk. Australia
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_d533c40a3d2cb06fbb75393b0bdb695a = L.circleMarker(
+                [28.4729382602, -16.2546806163],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_d533c40a3d2cb06fbb75393b0bdb695a.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Pinus canariensis&lt;br&gt;Nombre común: Pino canario &lt;br&gt;Notas sobre el árbol: Ãrbol excelente, que resiste los incendios, muy apreciado por su madera, nuestra genuina &quot;tea&quot;, prÃ¡cticamente incorruptible, de amplio uso en artesonados, vigas y puertas de la arquitectura tradicional canaria. SÃ­mbolo de la Palma. Endemismo canario.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_d7f9e45dacee9e29f903ba8c678c143a = L.circleMarker(
+                [28.4722826862, -16.2532563509],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_d7f9e45dacee9e29f903ba8c678c143a.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Pinus halepensis&lt;br&gt;Nombre común: Pino carrasco &lt;br&gt;Notas sobre el árbol: Pino de hasta 20 m.  de altura, hojas aciculares en grupos de 2, de color verde claro. PiÃ±as cÃ³nicas y pedunculadas. Especie muy utilizada en repoblaciones forestales de  zona baja y media de Canarias. Madera de baja calidad. Oriunda region mediterrÃ¡n
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_fcf99aae5512e204a497485bbece5a84 = L.circleMarker(
+                [28.4710493374, -16.2539767243],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_fcf99aae5512e204a497485bbece5a84.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Hibiscus elatus&lt;br&gt;Nombre común: Majo &lt;br&gt;Notas sobre el árbol: Puede alcanzar lÃ±os 25 m de altura. Tronco recto de hojas anchas y verdosas, y flores grandes en forma de trompeta con 5 o mÃ¡s pÃ©talos. Crece en lugares hÃºmedos y su bella madera es usada para mobiliario y decoraciÃ³n. Oriunda de Jamaica y Cuba.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_c1f169d89325f1977474a9798524ca58 = L.circleMarker(
+                [28.472248683, -16.2545527989],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_c1f169d89325f1977474a9798524ca58.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Ligustrum japonicum&lt;br&gt;Nombre común: Aligustre &lt;br&gt;Notas sobre el árbol: Porte bajo o medio,  entre 8 y 10 metros de altura como mÃ¡ximo. Frecuentemente se presenta en forma arbustiva, sirviendo entonces para formar setos. En forma de Ã¡rbol tiene ramas rectas y lisas, y forma una copa globosa. Oriunda de JapÃ³n y Corea.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_ad833bf8a3b473d77451945bd279d8f3 = L.circleMarker(
+                [28.4716440255, -16.253468763],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_ad833bf8a3b473d77451945bd279d8f3.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Dovyalis caffra&lt;br&gt;Nombre común: Manzana cafres &lt;br&gt;Notas sobre el árbol: Arbusto o arbolillo de hasta 6 m. de alto, armado de espinas y hojas fasciculadas. Frutos comestibles, amarillentos, de aspecto parecido a una ciruela. Oriunda de Ãfrica del sur.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_179fb213ffc720df908889f04b18ba0a = L.circleMarker(
+                [28.4724425082, -16.253010656],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_179fb213ffc720df908889f04b18ba0a.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Plumeria rubra&lt;br&gt;Nombre común: Flor de cera &lt;br&gt;Notas sobre el árbol: Ãrbol de hasta 10 m. con la corteza lisa y hojas verdes por el haz y glaucas por el envÃ©s. Recibe el nombre comun del aspecto de sus flores, de color blanco o rosado, con la garganta amarilla.  Muy frecuente es Canarias. Oriunda de AmÃ©rica central.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_19a2bb7796b3f6712d864961d068f759 = L.circleMarker(
+                [28.4718725364, -16.2530902986],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_19a2bb7796b3f6712d864961d068f759.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Tecoma stans&lt;br&gt;Nombre común: Roble amarillo &lt;br&gt;Notas sobre el árbol: Arbusto con flores tubuloso-acampanadas. de color amarillo, que dan lugar a un fruto en cÃ¡psula linear persistente. Oriundo de AmÃ©rica, desde Arizona hasta el norte de Argentina.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_b4641b3e49bc94eb96c4a0ddf9fdc577 = L.circleMarker(
+                [28.472979247, -16.2543252374],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_b4641b3e49bc94eb96c4a0ddf9fdc577.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Pandanus utilis&lt;br&gt;Nombre común: PÃ¡ndano &lt;br&gt;Notas sobre el árbol: Ãrbol dioico de ramificaciÃ³n dicÃ³toma y copa piramidal. Su infrutescencia tiene forma de piÃ±a, comestible, pero de baja calidad. Oriunda de Madagascar.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_47a64d0549055d3d8a5b685a1a6e784a = L.circleMarker(
+                [28.4715752309, -16.2545037733],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_47a64d0549055d3d8a5b685a1a6e784a.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Bambusa sp&lt;br&gt;Nombre común: BambÃº &lt;br&gt;Notas sobre el árbol: FÃ¡ciles de reconocer con su aspecto de caÃ±as, son utilizados en setos y paseos abovedados, aportando un agradable frescor en los dÃ­as mÃ¡s calurosos. Oriunda de Asia tropical.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_b77696932a1d92fd51bd8132fc864697 = L.circleMarker(
+                [28.4725290799, -16.2541309776],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_b77696932a1d92fd51bd8132fc864697.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Nerium Oleander&lt;br&gt;Nombre común: Adelfa &lt;br&gt;Notas sobre el árbol: Arbusto de hojas coriÃ¡ceas, lanceoladas. Inflorescencias terminales con numerosas flores sencillas o dobles, siempre vistosas: blancas, rojas y crema. Tolera bien la poda y la sequÃ­a, siendo frecuente en jardinerÃ­a. Especia muy tÃ³xica. Oriunda de Bra
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_4a7bca9b8d599e8b61a8ba7e10c0dc9c = L.circleMarker(
+                [28.4728292082, -16.2542875868],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_4a7bca9b8d599e8b61a8ba7e10c0dc9c.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Bougainvillea spectabilis&lt;br&gt;Nombre común: Buganvilla &lt;br&gt;Notas sobre el árbol: Arbusto trepador muy utilizado por la espectacular coloraciÃ³n de sus brÃ¡cteas florales, de vistosos colores: violeta, rosa, rojo, anaranjado, amarillo, blanco y crema. EN el parque en Paseo Manuel Bonnin Guerin con pÃ©rgolas. Oriunda de Madagascar.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_2560112c506e68108d9eb6e7fa2c2661 = L.circleMarker(
+                [28.4716366118, -16.2546642739],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_2560112c506e68108d9eb6e7fa2c2661.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Acalypha wilkesiana&lt;br&gt;Nombre común: Acalifa &lt;br&gt;Notas sobre el árbol: Arbusto con vistosas hojas variegadas, muy utilizado como seto en la jardinerÃ­a tradicional canaria. debido a que se deja moldear y crece muy rÃ¡pido, tras ser podado. Oriunda de Polinesia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_c62f4dc93a6e6107a3dfb3980a97a3c3 = L.circleMarker(
+                [28.4717046347, -16.2547554507],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_c62f4dc93a6e6107a3dfb3980a97a3c3.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Phoenix dactylifera&lt;br&gt;Nombre común: Palmera datilera &lt;br&gt;Notas sobre el árbol: Palmera ampliamente cultivada por sus frutos comestibles, los dÃ¡tiles. Oriunda de oeste de Asia y Norte de Ãfrica.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_ffd789391c6d3379b02bad6a318d73a3 = L.circleMarker(
+                [28.4726459551, -16.2551247004],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_ffd789391c6d3379b02bad6a318d73a3.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Duranta repens&lt;br&gt;Nombre común: Tala Blanca &lt;br&gt;Notas sobre el árbol: Arbusto ramificado de flores pequeÃ±as y delicado color lila, con frutos amarillo-anaranjados en la madurez. Oriunda de AmÃ©rica del sur.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_fd0dda8c8772a1803be6495dbe0efce1 = L.circleMarker(
+                [28.4728217263, -16.254414284],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_fd0dda8c8772a1803be6495dbe0efce1.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Eugenia uniflora&lt;br&gt;Nombre común: Pitanga &lt;br&gt;Notas sobre el árbol: Arbusto de hojas opuestas y rojizas cuando jÃ³venes, que se tornan progresivamente verdes, mÃ¡s oscuras por el haz y claras por el envÃ©s. Sus frutos rojizos son comestibles. Oriunda de Brasil. Argentina y Uruguay.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_dcff483dc95d353047a78d7649154f9b = L.circleMarker(
+                [28.4716299127, -16.2535840073],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_dcff483dc95d353047a78d7649154f9b.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Bauhinia variegata&lt;br&gt;Nombre común: Ãrbol orquÃ­dea &lt;br&gt;Notas sobre el árbol: Arbolito caducifolio de hasta 7 m. de altura, tambiÃ©n llamado &quot;pata de vaca&quot; debido a la forma de pezuÃ±a que tienen sus hojas. Flores muy llamativas de color branco, rosa o pÃºrpura, Utilizado por su valor ornamental. Oriuenda de la India y China.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_2b5fb668842d4047455fdde68de649b7 = L.circleMarker(
+                [28.4721076522, -16.2544082897],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_2b5fb668842d4047455fdde68de649b7.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Sabal minor&lt;br&gt;Nombre común: Palmeto enano &lt;br&gt;Notas sobre el árbol: Palmera copn tronco subterrÃ¡neo o que sobresale un poco, de hojas palmeadas con el Ã¡pice de los foliolos bÃ­ficos. Oriunda del sureste de Estados Unidos.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_347093b7d3580f617c978978a9954f01 = L.circleMarker(
+                [28.4728092431, -16.2537700173],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_347093b7d3580f617c978978a9954f01.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Enterolobium contortisiliquum&lt;br&gt;Nombre común: Morong &lt;br&gt;Notas sobre el árbol: Ãrbol caducifolio de hasta 20 m. de alto, de hojas bipinnadas. Fruto en legumbre retorcida, auricular y de color negro, por eso el nombre de &quot;oreja de negro. La corteza y sus frutos se usan como sustituto al jabÃ³n. Oriunda de Brasil, Bolivia y Argentin
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_eb0b04d04f61df4a320a0d436c723a53 = L.circleMarker(
+                [28.4727349499, -16.2539852626],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_eb0b04d04f61df4a320a0d436c723a53.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Brahea armata&lt;br&gt;Nombre común: Palmera azul &lt;br&gt;Notas sobre el árbol: Palmera de hasta 12 m. de alto, con el tronco ensanchado hacia la base. Hojas en forma de abanico, de un color verde  azulado, del que toma su nombre comÃºn y por el que se aprecia como ornamental. Oriunda del noroeste de MÃ©jico y Baja California.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_9c0f4696db977576ee578c7d78ce2dd8 = L.circleMarker(
+                [28.4711362641, -16.2539299471],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;brown&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;brown&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_9c0f4696db977576ee578c7d78ce2dd8.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Acalypha wilkesiana&lt;br&gt;Nombre común: Acalifa &lt;br&gt;Notas sobre el árbol: Arbusto con vistosas hojas variegadas, muy utilizado como seto en la jardinerÃ­a tradicional canaria. debido a que se deja moldear y crece muy rÃ¡pido, tras ser podado. Oriunda de Polinesia.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_b30420a3352451b0e67c739f568d46d1 = L.circleMarker(
+                [28.4718315124, -16.2531712513],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_b30420a3352451b0e67c739f568d46d1.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Bismarckia nobilis&lt;br&gt;Nombre común: Palmera de Bismarck &lt;br&gt;Notas sobre el árbol: Ãrbol con tronco de color gris con hendiduras anilladas. Los pecÃ­olos tienen entre 2 y 3 metros de largo, ligeramente armados y estÃ¡n cubiertos en un color blanco de cera o de color canela. Oriunda de Madagascar.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var circle_marker_2c3d4d5ec7be6e56cd75dbc3b4def522 = L.circleMarker(
+                [28.4735413629, -16.2532603382],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.7, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(marker_cluster_abcd09d0164c8788caf1046ac2a33b37);
+        
+    
+            circle_marker_2c3d4d5ec7be6e56cd75dbc3b4def522.bindTooltip(
+                `&lt;div&gt;
+                     Especia: Phoenix roebelenii&lt;br&gt;Nombre común: Palmera enana &lt;br&gt;Notas sobre el árbol: Altura mÃ¡xima de 5 m, pero generalmente su tronco no mide mÃ¡s de 1 m de altura. Sus hojas son pinnatisectas. Sus flores son diminutas, amarillentas, producidas en una inflorescencia de 45 cm de largo. Oriunda de Asia y suroeste de China.
+                 &lt;/div&gt;`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            marker_cluster_abcd09d0164c8788caf1046ac2a33b37.addTo(map_0ced0c4abbef7d9444531543e5575920);
+        
+    
+            tile_layer_a9ebb4c35d7ac54bab298e516f24def1.addTo(map_0ced0c4abbef7d9444531543e5575920);
+        
+    
+            marker_cluster_abcd09d0164c8788caf1046ac2a33b37.addTo(map_0ced0c4abbef7d9444531543e5575920);
+        
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
