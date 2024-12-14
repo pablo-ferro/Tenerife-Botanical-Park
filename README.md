@@ -20,7 +20,7 @@ The aim of this project is to democratize access to knowledge about the plant sp
 
 ## How to Use the Botanic Guide
 
-1. Access the visualization at this [link](https://github.com/pablo-ferro). COMING SOON
+1. Access the visualization at this [link](https://pablo-ferro.github.io/Tenerife-Botanical-Park/)).
 2. Explore the interactive map to discover the various plant species present in the park.
 3. Click on the markers to get additional information about each species, including common names, ecological value, and location.
 
