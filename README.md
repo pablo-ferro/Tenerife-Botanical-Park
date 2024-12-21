@@ -6,7 +6,7 @@ In this visualization, we explore the botanical richness found within the park, 
 
 The aim of this project is to democratize access to knowledge about the plant species found in the park, allowing the community and visitors to discover the biodiversity that forms part of their daily environment. This botanic guide offers users an opportunity to understand the value of the local flora and its importance to the urban ecosystem.
 
-![How the web looks like](InterfaceModelTrees.png)
+![How the web looks like](InterfaceBotanicalTrees.png)
 
 ## Key Features
 
